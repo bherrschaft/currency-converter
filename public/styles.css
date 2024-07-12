@@ -51,3 +51,18 @@ p {
 #favorite-currency-pairs {
     margin-top: 20px;
 }
+
+#favorite-currency-pairs button {
+    display: block;
+    margin-bottom: 5px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#favorite-currency-pairs button:hover {
+    background-color: #2980b9;
+}
