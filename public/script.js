@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const favoritePair = `${baseCurrency}/${targetCurrency}`;
 
         // Send a POST request to save the favorite currency pair
-        fetch('/favorite', {
+        fetch('http://localhost:3000/favorite', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function () {
         favoriteCurrencyPairsContainer.innerHTML = ''; 
 
         // Fetch the favorite pairs from the server
-        fetch('/favorites')
+        fetch('http://localhost:3000/favorites')
         .then(response => response.json())
         .then(favoritePairs => {
             // Create a button for each favorite pair

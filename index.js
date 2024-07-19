@@ -9,10 +9,14 @@ const sequelize = require('./config/database');
 // Import the FavoriteCurrencyPair model
 const FavoriteCurrencyPair = require('./models/FavoriteCurrencyPair');
 
+const cors = require('cors');
+
 // Create an Express application
 const app = express();
 // Define the port number the server will listen on
 const port = 3000;
+
+app.use(cors());
 
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
